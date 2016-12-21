@@ -1,5 +1,13 @@
 # Testada
-C# Selenium testing made easy.
+Testada is a C# Visual Studio application designed to make C# Selenium testing easy for Selenium beginners. Once you've coded your test, it appears in a UI so you can select, run it, watch it, and get the test results by email and in the app.
+
+Testada does not integrate with any build tools so it may not be the perfect solution for you if you want your tests to run automatically (right now you have to trigger the test). We created Testada to make it possible for new comers to Selenium to build tests quickly, and catch regression issues in complex internal web applications without having to learn everything in the entire universe of build automation or continuous integration.
+
+We've included two of our actual tests in the repository for you to use as references.
+* TestCitizenConnectLogin
+* TestTaxes
+  *  This test demonstrates how to use abstraction via a test helper class so that you can make small, reuseable methods that can be used in multiple tests
+  * This test shows how to require and run another test when your test is started (in this case, we run the Login test so that the user is authenticated)
 
 ## Quick Start
 1. Clone the reposititory and open the Visual Studio solution file (*Testada/Testada.sln*) in Visual Studio 2015 or newer.
