@@ -1,0 +1,17 @@
+﻿{
+  "tests": [
+    {
+      "suite": "Citizen Connect",
+      "tests": [
+        {
+          "name": "Login",
+          "class": "TestCitizenConnectLogin"
+        },
+        {
+          "name": "Taxes",
+          "class": "TestTaxes"
+        }
+      ]
+    }
+  ]
+}
