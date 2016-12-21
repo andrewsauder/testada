@@ -1,0 +1,13 @@
+2016-12-21 20:04:49 [Success] Start test Citizen Connect Taxes
+2016-12-21 20:04:52 [Notice] Step Initialized - Open browser
+2016-12-21 20:04:53 [Notice] Step Finished - Open browser
+
+
+2016-12-21 20:04:53 [Notice] Step Initialized - Login
+2016-12-21 20:04:53 [Fatal] Element not found on sign in form
+2016-12-21 20:04:54 [Fatal] Test Citizen Connect Taxes ended
+2016-12-21 20:04:54 [Notice] Cleanup initialized
+2016-12-21 20:04:54 [Notice] Executing cleanup step 0
+2016-12-21 20:04:55 [Warning] Navigation to https://www.garrettcounty.org/public_users/payments/taxes failed
+2016-12-21 20:04:55 [Fatal] Error while removing account
+2016-12-21 20:04:55 [Fatal] Test Citizen Connect Taxes ended

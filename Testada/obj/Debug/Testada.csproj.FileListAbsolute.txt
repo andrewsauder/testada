@@ -23,4 +23,8 @@ C:\Assets\Code\testada\Testada\bin\Debug\WebDriver.xml
 C:\Assets\Code\testada\Testada\bin\Debug\WebDriver.Support.xml
 C:\Assets\Code\testada\Testada\obj\Debug\Testada.exe
 C:\Assets\Code\testada\Testada\obj\Debug\Testada.pdb
-C:\Assets\Code\testada\Testada\bin\Debug\TestsDefinition.json
+C:\Assets\Code\testada\Testada\bin\Debug\tests\TestsDefinition.json
+C:\Assets\Code\testada\Testada\bin\Debug\Testada.exe.manifest
+C:\Assets\Code\testada\Testada\bin\Debug\Testada.application
+C:\Assets\Code\testada\Testada\obj\Debug\Testada.exe.manifest
+C:\Assets\Code\testada\Testada\obj\Debug\Testada.application

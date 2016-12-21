@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Testada.test_helpers;
+using Testada.tests.test_helpers;
 
 namespace Testada.tests
 {

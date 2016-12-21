@@ -10,7 +10,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using System.Drawing.Imaging;
 
-using Testada.test_helpers;
+using Testada.tests.test_helpers;
 
 namespace Testada.tests
 {
@@ -87,54 +87,7 @@ namespace Testada.tests
             {
                 HelperCitizenConnect.addAccount(tm, accountNumber, "taxes", numberInUrlOfAccount);
             }, "Enter tax account from taxes overview");
-
-
-
-
-            //open payment form and fill it out
-            tm.addTestStep(() =>
-            {
-                 //open payment form
-                 HelperCitizenConnect.openPaymentForm(tm);
-
-                //fill out payment form
-                HelperCitizenConnect.fillOutNewCreditCard(tm);
-
-                //submit payment form
-                HelperCitizenConnect.submitPaymentForm(tm);
-
-                //wait for payment for to complete and then load success page
-                HelperGeneric.WaitForAjax(tm);
-
-                //check if the successful transacation info is displayed on the detail page
-                try
-                {
-                    var successfulTransaction = tm.cWebDriver.FindElementByClassName("successful-transaction");
-                    var accountInfo = tm.cWebDriver.FindElementByCssSelector(".successful-transaction .account").Text;
-
-                    if (accountInfo == "Account " + accountNumber)
-                    {
-                        HelperGeneric.Screenshot(tm, "payment-success");
-                        tm.log("Transaction for account " + accountNumber + " successful!");
-                    }
-                    else
-                    {
-                        HelperGeneric.Screenshot(tm, "payment-failure");
-                        tm.log("Transaction failure on account " + accountNumber, 2);
-                    }
-
-                }
-                catch
-                {
-                    HelperGeneric.Screenshot( tm, "transaction-failure");
-                    tm.log("Transaction failure", 3);
-                }
-
-            }, "openPaymentForm");
-
-
-
-
+            
 
         }
 
@@ -147,15 +100,6 @@ namespace Testada.tests
                 HelperGeneric.LoadPage(tm, baseUrl + "/public_users/payments/taxes");
                 HelperCitizenConnect.removeAccount(tm, numberInUrlOfAccount, "taxes");
             }, "Remove tax account from taxes overview");
-
-
-            //delete the payment by hand from the database
-            tm.addCleanupStep(() =>
-            {
-                db dbc = new db( HelperSettings.get("dbTax") );
-                string q = "DELETE FROM [Trans] WHERE Account_No = '"+ accountNumber + "' AND[Year] = '2016-17' AND[Code] = 'P'; ";
-                dbc.write(q);
-            });
             
         }
 

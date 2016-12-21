@@ -1,0 +1,30 @@
+﻿{
+  "tests": [
+    {
+      "suite": "My Internal App Test Suite",
+      "tests": [
+        {
+          "name": "Login",
+          "class": "TestLogin"
+        }
+      ]
+    },
+    {
+      "suite": "My Public App Test Suite",
+      "tests": [
+        {
+          "name": "Login",
+          "class": "TestLogin"
+        },
+        {
+          "name": "Password reset",
+          "class": "TestPasswordReset"
+        },
+        {
+          "name": "Create and edit page",
+          "class": "TestPageCreateEdit"
+        }
+      ]
+    }
+  ]
+}

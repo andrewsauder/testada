@@ -1,8 +1,8 @@
-2016-12-21 19:31:17 [Success] Start test Citizen Connect Login
-2016-12-21 19:31:20 [Notice] Step Initialized - Open browser
-2016-12-21 19:31:23 [Notice] Step Finished - Open browser
+2016-12-21 19:59:11 [Success] Start test Citizen Connect Login
+2016-12-21 19:59:14 [Notice] Step Initialized - Open browser
+2016-12-21 19:59:17 [Notice] Step Finished - Open browser
 
 
-2016-12-21 19:31:23 [Notice] Step Initialized - Login
-2016-12-21 19:31:23 [Fatal] Element not found on sign in form
-2016-12-21 19:31:24 [Fatal] Test Citizen Connect Login ended
+2016-12-21 19:59:17 [Notice] Step Initialized - Login
+2016-12-21 19:59:17 [Fatal] Element not found on sign in form
+2016-12-21 19:59:18 [Fatal] Test Citizen Connect Login ended

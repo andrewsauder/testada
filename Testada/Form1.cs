@@ -42,7 +42,7 @@ namespace Testada
             chkEmailResults.Checked = HelperSettings.get("chkEmailResults");
             txtEmailResultsTo.Text = HelperSettings.get("testEmailResultsTo");
             //load test definition
-            dynamic testsDefinition = JsonConvert.DeserializeObject(File.ReadAllText("TestsDefinition.json"));
+            dynamic testsDefinition = JsonConvert.DeserializeObject(File.ReadAllText("tests/TestsDefinition.json"));
             
 
             //generate tests list box
