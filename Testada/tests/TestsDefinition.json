@@ -1,28 +1,15 @@
 ﻿{
   "tests": [
     {
-      "suite": "My Internal App Test Suite",
+      "suite": "Citizen Connect",
       "tests": [
         {
           "name": "Login",
-          "class": "TestLogin"
-        }
-      ]
-    },
-    {
-      "suite": "My Public App Test Suite",
-      "tests": [
-        {
-          "name": "Login",
-          "class": "TestLogin"
+          "class": "TestCitizenConnectLogin"
         },
         {
-          "name": "Password reset",
-          "class": "TestPasswordReset"
-        },
-        {
-          "name": "Create and edit page",
-          "class": "TestPageCreateEdit"
+          "name": "Taxes",
+          "class": "TestTaxes"
         }
       ]
     }
