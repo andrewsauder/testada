@@ -1,0 +1,5 @@
+/Testada/bin/Debug/*
+/Testada/bin/Release/*
+/Testada/obj/Debug/*
+/Testada/obj/Release/*
+/Testada/tests_private/
